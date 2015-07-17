@@ -17,3 +17,10 @@ compinit
 autoload -U colors && colors
 PROMPT="%{$fg[green]%}%n%{$reset_color%}@%{$fg[blue]%}%m %{$fg_no_bold[yellow]%}%1~ %{$reset_color%}% # "
 RPROMPT="[%{$fg_no_bold[yellow]%}%?%{$reset_color%}]"
+
+#  VIM related aliases ;o) btw. ``$SHELL:t'' is a modifiers from the Z
+#  Shell. In other shells you can use ``${SHELL##*/}'' instead. Valid
+#  Modifiers can be found in ``info -f zsh -n Modifiers''.
+alias :w='echo "Dude.. thats $SHELL:t and *not* VI(M)!"'
+alias :q='echo "Dude.. thats $SHELL:t and *not* VI(M)!"'
+alias :wq='echo "Dude.. thats $SHELL:t and *not* VI(M)!"'
