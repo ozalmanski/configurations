@@ -24,3 +24,6 @@ RPROMPT="[%{$fg_no_bold[yellow]%}%?%{$reset_color%}]"
 alias :w='echo "Dude.. thats $SHELL:t and *not* VI(M)!"'
 alias :q='echo "Dude.. thats $SHELL:t and *not* VI(M)!"'
 alias :wq='echo "Dude.. thats $SHELL:t and *not* VI(M)!"'
+
+# Aliases
+alias la='ls -la'
