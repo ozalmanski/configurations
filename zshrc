@@ -27,3 +27,4 @@ alias :wq='echo "Dude.. thats $SHELL:t and *not* VI(M)!"'
 
 # Aliases
 alias la='ls -la'
+alias ssh='ssh -A'
