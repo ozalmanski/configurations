@@ -1,8 +1,11 @@
-.PHONY: all git zsh
+.PHONY: all git zsh pylint
 
-all: git zsh
+all: git zsh pylint
 git:
 	cp gitconfig ~/.gitconfig
 zsh:
 	cp zshrc ~/.zshrc
 
+# Python
+pylint:
+	cp pylint.rc ~/.pylint.rc
