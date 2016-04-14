@@ -1,0 +1,26 @@
+# Prompt configuration
+autoload -U colors && colors
+
+# Username, red color if root
+if (( EUID == 0 )); then
+    PROMPT_USERCOLOR="%{${fg_bold[red]}%}"
+else
+    PROMPT_USERCOLOR="%{${fg_bold[green]}%}"
+fi
+PROMPT_USERNAME="$PROMPT_USERCOLOR%n%{$reset_color%}"
+
+# Special hostname for Monsoon
+PROMPT_HOSTCOLOR="%{${fg_bold[blue]}%}"
+if [[ -n $MONSOON_NAME ]]; then
+    PROMPT_HOST="$PROMPT_HOSTCOLOR$MONSOON_NAME%{$reset_color%}"
+else
+    PROMPT_HOST="$PROMPT_HOSTCOLOR%m%{$reset_color%}"
+fi
+
+PROMPT_PATH="$fg_no_bold[yellow]%}%1~ %{$reset_color%}% # "
+
+PROMPT="$PROMPT_USERNAME @ $PROMPT_HOST » $PROMPT_PATH"
+
+# Git Prompt
+source ~/.zsh/git_prompt
+

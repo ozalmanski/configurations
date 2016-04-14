@@ -12,21 +12,23 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-# Prompt configuration
-autoload -U colors && colors
-PROMPT="%{$fg[green]%}%n%{$reset_color%}@%{$fg[blue]%}%m %{$fg_no_bold[yellow]%}%1~ %{$reset_color%}% # "
-RPROMPT="[%{$fg_no_bold[yellow]%}%?%{$reset_color%}]"
-
-# Git Prompt
-source ~/.zsh/git_prompt
-
 # Load aliases
 for alias_file in ~/.zsh/aliases/*; do
     source $alias_file
+done
+
+# Scripts
+for script in ~/.zsh/bin/*; do
+    eval "$($script)"
 done
 
 # Manage title
 if [[ -a ~/.zsh/host_details ]]; then
     TITLE=`cat ~/.zsh/host_details`
     echo -ne "\e]1;$TITLE\a"
+else
+    echo -ne "\e]1;$MONSOON_PROJECT/$MONSOON_NAME\a"
 fi
+
+# Set Prompt
+source ~/.zsh/prompt
