@@ -1,0 +1,3 @@
+# Aliases
+alias la='ls -la'
+alias ssh='ssh -A'

@@ -1,0 +1,6 @@
+#  VIM related aliases ;o) btw. ``$SHELL:t'' is a modifiers from the Z
+#  Shell. In other shells you can use ``${SHELL##*/}'' instead. Valid
+#  Modifiers can be found in ``info -f zsh -n Modifiers''.
+alias :w='echo "Dude.. thats $SHELL:t and *not* VI(M)!"'
+alias :q='echo "Dude.. thats $SHELL:t and *not* VI(M)!"'
+alias :wq='echo "Dude.. thats $SHELL:t and *not* VI(M)!"'

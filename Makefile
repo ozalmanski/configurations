@@ -4,7 +4,9 @@ all: git zsh pylint vi
 git:
 	cp gitconfig ~/.gitconfig
 zsh:
-	cp zshrc ~/.zshrc
+	cp zsh/zshrc ~/.zshrc
+	mkdir -p ~/.zsh/aliases
+	cp zsh/aliases/* ~/.zsh/aliases/
 vi:
 	cp vim/vimrc ~/.vimrc
 	mkdir -p ~/.vim/autoload
