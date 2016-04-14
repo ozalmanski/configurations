@@ -24,3 +24,9 @@ source ~/.zsh/git_prompt
 for alias_file in ~/.zsh/aliases/*; do
     source $alias_file
 done
+
+# Manage title
+if [[ -a ~/.zsh/host_details ]]; then
+    TITLE=`cat ~/.zsh/host_details`
+    echo -ne "\e]1;$TITLE\a"
+fi
