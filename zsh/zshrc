@@ -18,9 +18,11 @@ for alias_file in ~/.zsh/aliases/*; do
 done
 
 # Scripts
-for script in ~/.zsh/bin/*; do
-    eval "$($script)"
-done
+if [[ -n "$(ls ~/.zsh/bin)" ]]; then
+    for script in ~/.zsh/bin/*; do
+        eval "$($script)"
+    done
+fi
 
 # Manage title
 if [[ -a ~/.zsh/host_details ]]; then

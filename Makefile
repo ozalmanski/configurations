@@ -8,8 +8,6 @@ zsh:
 	cp zsh/prompt ~/.zsh/prompt
 	mkdir -p ~/.zsh/aliases
 	cp zsh/aliases/* ~/.zsh/aliases/
-	mkdir -p ~/.zsh/bin
-	cp zsh/bin/* ~/.zsh/bin/
 	cp zsh/git_prompt ~/.zsh
 vi:
 	cp vim/vimrc ~/.vimrc
