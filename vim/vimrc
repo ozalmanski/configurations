@@ -35,7 +35,8 @@ endfunction
 
 nnoremap <F3> <ESC>:set expandtab!<CR>:call SpacesAndTabs()<CR><CR>
 
-set list lcs=tab:>-,trail:.
+set listchars=eol:\ ,tab:\»\ ,trail:-,extends:>,precedes:<
+set list
 
 filetype plugin indent on
 
