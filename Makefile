@@ -9,9 +9,9 @@ git:
 # ZSH configuration
 zsh:
 	cp zsh/zshrc ~/.zshrc
-	cp zsh/prompt ~/.zsh/prompt
 	mkdir -p ~/.zsh/aliases
 	cp zsh/aliases/* ~/.zsh/aliases/
+	cp zsh/prompt ~/.zsh/prompt
 	cp zsh/git_prompt ~/.zsh
 
 # VIM configuration
