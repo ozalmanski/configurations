@@ -7,6 +7,7 @@ zsh:
 	cp zsh/zshrc ~/.zshrc
 	mkdir -p ~/.zsh/aliases
 	cp zsh/aliases/* ~/.zsh/aliases/
+	cp zsh/git_prompt ~/.zsh
 vi:
 	cp vim/vimrc ~/.vimrc
 	mkdir -p ~/.vim/autoload

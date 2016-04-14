@@ -17,6 +17,9 @@ autoload -U colors && colors
 PROMPT="%{$fg[green]%}%n%{$reset_color%}@%{$fg[blue]%}%m %{$fg_no_bold[yellow]%}%1~ %{$reset_color%}% # "
 RPROMPT="[%{$fg_no_bold[yellow]%}%?%{$reset_color%}]"
 
+# Git Prompt
+source ~/.zsh/git_prompt
+
 # Load aliases
 for alias_file in ~/.aliases/*; do
     source $alias_file
