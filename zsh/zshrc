@@ -21,6 +21,6 @@ RPROMPT="[%{$fg_no_bold[yellow]%}%?%{$reset_color%}]"
 source ~/.zsh/git_prompt
 
 # Load aliases
-for alias_file in ~/.aliases/*; do
+for alias_file in ~/.zsh/aliases/*; do
     source $alias_file
 done
