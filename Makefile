@@ -14,6 +14,11 @@ zsh:
 	cp zsh/prompt ~/.zsh/prompt
 	cp zsh/git_prompt ~/.zsh
 
+# Bash configuration
+bash:
+	mkdir -p ~/.bash
+	cp bash/bashrc ~/.bashrc
+
 # VIM configuration
 vi:
 	cp vim/vimrc ~/.vimrc
