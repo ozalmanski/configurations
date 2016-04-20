@@ -1,6 +1,6 @@
 [user]
-	name = Alexandre Sadones
-	email = asadones@multiposting.fr
+	name = Olivier Zalmanski
+	email = ozalmanski@multiposting.fr
 
 [core]
 	excludesfile=~/.gitignore
